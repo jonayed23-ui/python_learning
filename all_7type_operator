@@ -1,0 +1,92 @@
+# Arithmetic Operators 
+a = 13
+b = 14
+
+print(a + b)    
+print(a - b)    
+print(a * b)    
+print(a / b)    
+print(a // b)   
+print(a % b)    
+print(a ** b)   # Power/Exponent
+
+#Assignment Operators — put the value on the Variable 
+x = 10
+x += 5    # x = x + 5
+print(x)  # output: 15
+x -= 3    # x = x - 3
+print(x)  # output: 12
+x *= 2    # x = x * 2
+print(x)  # output: 24
+x /= 4    # x = x / 4
+print(x)  # output: 6.0
+x //= 2   # x = x // 2
+print(x)  # output: 3.0
+x %= 2    # x = x % 2
+print(x)  # output: 1.0
+x **= 3   # x = x ** 3
+print(x)  # output: 1.0
+
+#Comparison Operators — Compare values and return a Boolean result
+a = 10
+b = 20
+print(a == b)  # Equal to
+print(a != b)  # Not equal to
+print(a > b)   # Greater than
+print(a < b)   # Less than
+print(a < b)     
+print(a >= 10)   
+print(a <= 9) 
+# String comparison — alphabetically
+print("apple" == "apple")    # output: True
+print("apple" < "banana")    # 'a' < 'b' alphabetically -> output: True
+print("Zebra" < "apple")
+
+# Chained comparison
+age = 25
+print(18 < age < 30)  
+
+marks = 75
+grade = "A" if marks >= 90 else "B" if marks >= 80 else "C" if marks >= 70 else "D" if marks >= 60 else "F"
+print(grade)  
+
+#Logical Operators
+
+a = True
+b = False
+
+
+print(a and b)          
+print(True and True)    
+print(False and True)   
+
+print(a or b)           
+print(True or False)    
+
+print(not a)            
+print(not b) 
+
+# Real-life example
+age = 22
+id = True
+enter_club = age >= 18 and id
+print(enter_club)  # output: True
+
+# Short-circuit evaluation
+x = 0
+print(x != 0 and 10 / x > 1)  
+                            
+y = 5
+print(y > 0 or 10 / 0 > 1)  
+
+#Identity Operators — Object Identity same memory location
+a = [1, 2, 3]
+b = [1, 2, 3]
+c = a 
+
+ptint(a is b) # output: False, because a and b are different objects in memory
+print(a is c) # output: True, because c references the same object as a
+print(a == b) # output: True, because a and b have the same content
+
+
+
